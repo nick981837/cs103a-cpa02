@@ -1,0 +1,39 @@
+<script>
+    function func1(){
+      console.log("I am in the click handler 1!"); 
+    }
+    function func2(){
+      console.log("I am in the click handler 2!"); 
+    }
+  </script>
+
+<h1>The shopping list are</h1>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Delete</th>
+            <th>Update</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Date</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (item of items) {
+        const id = item["_id"];
+         %>
+      <tr class="mb-2">
+        <td><button type="submit" class="btn btn-danger"><a href="/shoppingList/delete/<%= id %>">Delete</a></button></td>
+        <td><button type="submit" class="btn btn-primary"><a href="/updateForm/<%= id %>">Update</a></button></td>
+        <td><Strong><%= item["name"] %></Strong></td>
+        <td><%= item["price"] %></td>
+        <td><%= item["date"] %></td>
+        <td>
+            <%= item["category"] %>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
