@@ -12,8 +12,9 @@ const ShoppingList = require('./models/shopping');
 
 // Connecting to the database
 const mongoose = require('mongoose');
-const mongodb_URL = 'mongodb+srv://admin:12345@cluster0.gppo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-mongoose.connect(mongodb_URL, {useNewUrlParser: true, useUnifiedTopology:true});
+// const mongodb_URL = 'mongodb+srv://admin:12345@cluster0.gppo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const mongodb_URI = process.env.mongodb_URI;
+mongoose.connect(mongodb_URI, {useNewUrlParser: true, useUnifiedTopology:true});
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true)
 
@@ -110,8 +111,9 @@ app.get("/addForms", (req, res, next) => {
 
 
 
-
-  const port = "5000";
+// const port = "5000";
+const port = process.env.PORT || "5000";
+console.log('connecting on port '+port)
 app.set("port", port);
 
 // and now we startup the server listening on that port
