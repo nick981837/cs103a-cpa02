@@ -1,12 +1,9 @@
-<script>
-    function func1(){
-      console.log("I am in the click handler 1!"); 
-    }
-    function func2(){
-      console.log("I am in the click handler 2!"); 
-    }
-  </script>
-
+<% if (items.length == 0){%>
+    <h1 class="text-center">No items in your shopping list!</h1>
+    <img src="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt="Responsive image">
+<% } else if (items==null) { %>
+    No items in your shopping list!
+<% } else if (items.length>0) { %>
 <h1>The shopping list are</h1>
 <hr>
 <table class="table table-bordered table-striped">
@@ -37,3 +34,4 @@
     <% } %>
     </tbody>
 </table>
+<% } %>

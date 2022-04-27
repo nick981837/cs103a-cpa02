@@ -1,6 +1,5 @@
-<div class="text-center">
+<!-- <div class="text-center">
     <h1>Update item</h1>
-    <!-- <p></p> -->
     <form method="post" action="/simpleform/update">
         Item Name:<input type="text" name="name" value=<%= name %>><br>
         Price:<input type="number" name="price" value=<%= price %>><br>
@@ -8,5 +7,27 @@
         Category<input type="text" name="category" value=<%= category %>><br>
         <input type="submit">
     </form>
+</div> -->
+<div class="card">
+    <div class="card-body">
+<form class="text-center border border-light p-5" method="post" action="/simpleform/update">
+
+    <p class="h4 mb-4">Update Item</p>
+
+    <!-- Email -->
+    <input type="text" name="name"  class="form-control mb-4" placeholder="Name" value=<%= name %>>
+
+    <!-- Password -->
+    <input type="number" name="price"  class="form-control mb-4" placeholder="Price" value=<%= price %>>
+    <input type="date" name="date"  class="form-control mb-4" placeholder="Date" value=<%= price %> >
+    <input type="text" name="category" class="form-control mb-4" placeholder="Category" value=<%= category %>>
+
+    
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Submit</button>
+</form>
 </div>
+</div>
+
 
