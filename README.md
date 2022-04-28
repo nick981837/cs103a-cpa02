@@ -35,7 +35,7 @@ nodemon
 ![Alt text](public/show.png?raw=true "Shopping List")
 
 ### Update Page
-![Alt text](public/home.png?raw=true "Update")
+![Alt text](public/update.png?raw=true "Update")
 
 ### Delete Page
 ![Alt text](public/delete.png?raw=true "Delete")
