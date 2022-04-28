@@ -1,4 +1,4 @@
-# cs103a-cpa02-
+# cs103a-cpa02
 
 ## How to install and run my app locally
 Link to movie explaining the app: https://brandeis.zoom.us/rec/share/SXYkvJhTdOV539hpPo7ej10FzdC8TbbsIXnV2JbwfXwJwXe9zghEyFsptFxOnec.nlYrNyupv3_tKmg_?startTime=1651115462000
